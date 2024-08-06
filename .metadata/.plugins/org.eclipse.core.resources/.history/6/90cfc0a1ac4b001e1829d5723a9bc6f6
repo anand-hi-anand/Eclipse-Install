@@ -1,0 +1,12 @@
+package object;
+
+public class Class2{
+	
+	public void Speak(){
+		System.out.println("Class 2 speaks");
+	}
+	
+	public void run () {
+		System.out.println("Class 2 is running");
+	}
+}

@@ -1,0 +1,29 @@
+package flow ;
+
+import java.util.*;
+import java.io.*;
+
+public class test{
+	
+		public static void main (String args []) {
+			
+			System.out.println("Enter lines");
+			Scanner sc = new Scanner(System.in);
+		    
+			String s  = sc.next();
+			
+			
+			System.out.println(s.endsWith(" end-of-file"));
+					
+//			int i=0;
+//			while(sc.hasNext() && i<10) {
+//				
+//				System.out.println(i+" "+ s);
+//				
+//				i++;
+//			}
+//			
+			sc.close();
+		}
+	   
+}

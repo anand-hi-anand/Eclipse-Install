@@ -1,0 +1,21 @@
+package in.sp.beans;
+
+public class Student{
+	
+	private String name;
+	private int roll;
+	private String standard;
+	
+	
+	public void setName(String name) {
+		this.name=name;
+	}
+	
+	public String getName() {
+		return this.name;
+	}	
+	
+	public void setRoll(S) {
+		
+	}
+}

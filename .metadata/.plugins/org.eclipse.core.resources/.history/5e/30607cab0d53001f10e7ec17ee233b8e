@@ -1,0 +1,23 @@
+package Lists;
+
+import java.util.*;
+
+public class Arrays{
+	
+	
+	public static void main (String...args)
+	{
+		
+	List<String> vect= new Vector<>();
+	
+	vect.add("Null");
+	vect.add("Checkout");
+	vect.add("Test");
+	
+	for (int i=0; i<vect.size();i++) {
+		System.out.println(vect.get(i)+" ");
+	}
+	
+	
+	}	
+}

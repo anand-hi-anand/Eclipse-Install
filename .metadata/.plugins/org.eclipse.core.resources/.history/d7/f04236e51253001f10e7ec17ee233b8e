@@ -1,0 +1,27 @@
+package Lists;
+
+import java.util.*;
+
+public class LinkList{
+	
+	public static void main(String [] args) {
+		
+		Queue <String> lnkLst = new LinkedList<>(); 
+		
+		lnkLst.add("New Value");
+		lnkLst.add("Previous value");
+		lnkLst.add("All the values are for testing");
+		lnkLst.add("Checking methods");
+		
+		Iterator it = lnkLst.iterator();
+		
+		
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+	}
+	
+	
+	
+}

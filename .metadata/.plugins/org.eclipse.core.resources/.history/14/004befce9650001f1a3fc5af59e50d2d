@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author shasanan
+ *
+ */
+module BeanXML {
+	requires spring.context;
+}

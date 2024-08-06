@@ -1,0 +1,26 @@
+package flow;
+import java.util.*;
+
+public class Collection {
+
+   public static void main (String [] args ) {	
+	
+	ArrayList<String> name = new ArrayList<String>();
+	name.add("Shashwat");
+	name.add("Anand");
+    name.add(0,"Hi");
+    name.set(1, "Hello");
+    name.remove(1);
+    
+    
+    System.out.println(name);
+    
+    for (String str : name) {
+    	
+    	System.out.println(str);
+    }
+    
+	
+   }
+	
+}

@@ -1,0 +1,16 @@
+package object;
+
+public class Class3 extends Class2{
+	
+	@Override
+	public void Speak() {
+		System.out.println("Speking from Class 3");
+	}
+	
+	public static void main(String [] args ) {
+		Class1 p = new Class1();
+		p.Speak();
+		
+	}
+	
+}

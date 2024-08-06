@@ -1,0 +1,10 @@
+package object;
+
+public class Class3 extends Class1{
+	
+	public static void Main(String [] args ) {
+		Class3 p = new Class3();
+		p.Speak();
+	}
+	
+}

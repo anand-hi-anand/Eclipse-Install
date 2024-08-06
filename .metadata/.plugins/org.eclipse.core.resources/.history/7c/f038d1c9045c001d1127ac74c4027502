@@ -1,0 +1,133 @@
+package packageday1;
+
+/* Description
+Your task here is to implement Java code based on the following specifications. Note that your code should match the specifications in a precise manner. Consider default visibility of classes, data fields, and methods unless mentioned.
+
+Specifications
+class definitions: 
+ class Mobile:
+   data member:
+﻿﻿      HashMap<String, ArrayList<String>> mobiles = new HashMap<>()
+﻿   method definition:
+      addMobile(String company, String model)
+         return type: String
+         visibility: public  
+
+      getModels(String company)
+         return type: ArrayList<String>
+         visibility: public    
+         
+      buyMobile(String company, String model)
+         return type: String
+         visibility: public          
+Task
+Class Mobile
+
+-define the object of HashMap<String, ArrayList<String>> with variable name mobiles.
+
+The String defines the name of the company and the Arraylist<String> will have list of models.
+Implement the below methods for this class:
+
+-String addMobile(String company, String model):
+
+Write a code to add a company and its model in mobiles map as given below
+If the company does not exist in the map already, add the company and its model into the map. (Note: Add model into a new ArrayList<String> and add this list into map as value)
+If the company already exist in the map, append the given model into the corresponding model list.
+ Return "model successfully added" after performing the above operations
+-ArrayList<String> getModel(String company):
+
+Write a code to get the Model list for the given company from Map mobiles.
+Return null if the given company doesn't exist or doesn't have any model, else return the List<String> of all the models.
+-String buyMobile(String company, String model):
+
+Write a code to buy a mobile.
+Remove the mobile model from the list according to the compnay and model given. In case there are two same models then remove one and return the message "mobile sold successfully"
+Return a message "item not available" if the company or corresponding model is not present in the Map
+Sample Input
+
+Mobile obj = new Mobile();
+obj.addMobile("Oppo", "K3");
+obj.getModels("Oppo");
+obj.buyMobile("Oppo", "K3");
+Sample Output
+
+model successfully added
+[K3]
+mobile sold successfully
+NOTE:
+You can make suitable function calls and use RUN CODE button to check your main() method output.
+
+
+Execution time limit
+10 seconds*/
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+class Mobile{
+    // Write your code here..
+	
+	HashMap<String,ArrayList<String>> mobiles = new HashMap<>();
+	String company;
+	ArrayList<String> model= new ArrayList<String> ();
+	
+	
+	public String addMobile (String company, String model) {
+		
+	
+		
+		if (mobiles.containsKey(company)) {
+			mobiles.get(company).add(model);
+			
+		
+		}
+		else {
+			
+			mobiles.put(company, new ArrayList<String>);
+			mobiles.get(company).add(model);
+			
+			
+		}
+		
+		return "model successfully added";
+	}
+	
+	public ArrayList<String> getModels(String company) {
+		
+	if (mobiles.containsKey(company)) {
+		
+		return mobiles.get(company);
+	}
+	
+	else {
+		return null;
+	}
+			
+		
+	}
+	
+	public String buyMobile(String company, String model) {
+		
+		
+		if (Collections.frequency(mobiles.get(company),model)==1 ) {
+			int u = mobiles.get(company).indexOf(model);
+			mobiles.get(company).remove(u);
+		}
+		else {
+			
+			
+			
+		}
+		return "mobile sold successfully";
+	}
+	
+}
+
+public class Source {
+	public static void main(String args[] ) throws Exception {
+		/* Enter your code here. Read input from STDIN. Print output to STDOUT */
+	}
+}

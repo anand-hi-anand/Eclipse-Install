@@ -1,0 +1,14 @@
+package interface1;
+
+import java.util.function.*;
+
+
+public class BuiltInFuncInterf{
+	
+	public static void main (String [] args) {
+		
+		Consumer<Integer> con = a->System.out.println("The number is" + a);
+		
+		con.accept(50);
+	}
+}

@@ -1,0 +1,24 @@
+package interface1;
+
+import java.util.function.*;
+
+public class BuiltInFuncInterf {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Consumer<Integer> con = a-> System.out.println(a); 
+		Supplier<Double> sup =()-> Math.PI;
+		Predicate <Integer> pred= (b)-> b>10?true : false;
+		//Function<T,R> func = (c)-> System.out.println("The sum of the numbers are",c);
+		
+		con.accept(5);
+		double p = sup.get();
+		boolean z= pred.test(60);
+		
+		System.out.println(p);
+		System.out.println(z);
+	}
+	
+}

@@ -1,0 +1,26 @@
+package interface1;
+
+import java.util.function.*;
+import java.util.*;
+
+public class BuiltInFuncInterf {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> arr = new ArrayList<>();
+		
+		arr.add("Shashwat");
+		
+		Consumer<String> con = a-> System.out.println(a);
+	    Predicate<String> pred = a -> a==arr.get(0)? true: false; 
+	    
+	    String s = "Special Forces";
+	    
+	    con.accept(s);
+	    boolean b = pred.test("Shashwat");
+	    
+	    System.out.println(s);
+	
+	}
+	
+}

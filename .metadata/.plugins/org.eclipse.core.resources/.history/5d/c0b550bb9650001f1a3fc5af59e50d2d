@@ -1,0 +1,16 @@
+package in.sp.Main;
+
+import in.sp.beans.*;
+
+public class Main{
+	
+	public static void main(String [] args) {
+        
+		String loc = "in/sp/resources/Forces";
+		ApplicationContext con = new ClassPathXmlConfiguration();
+		Forces forc = (Forces)con.getBean("SF");
+				
+		forc.Display();		
+	}
+	
+}

@@ -1,0 +1,26 @@
+package flow ;
+
+import java.util.*;
+import java.io.*;
+
+
+public class test{
+	
+	public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    
+     
+	 System.out.println("Enter a String");	
+	 Scanner sc = new Scanner(System.in);
+     
+     String s = sc.nextLine();
+	 
+     System.out.println("Enter a Character");
+     String c = sc.nextLine();
+     
+     String r = s.replace(); 
+     
+     System.out.println(r);
+		
+}
+	}

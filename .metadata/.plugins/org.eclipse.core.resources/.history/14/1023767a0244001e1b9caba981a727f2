@@ -1,0 +1,27 @@
+package JDBC;
+
+import java.sql.*;
+
+public class Person{
+	
+	public static void Main(String [] args) throws Exception {
+		
+		String url="jdbc:postgresql://localhost:5432/practice";
+		String password="password";
+		String username="postgres";
+		
+		String query="INSERT INTO officer VALUES('Mohit Sharma', 'Major', 59066, '1 Para SF')";
+		
+		Class.forName("org.postgresql.Driver");
+		
+		Connection con = DriverManager.getConnection(url);
+		
+		Statement st = con.createStatement();
+		st.executeUpdate(query);
+		
+		st.close();
+		con.close();	
+		
+	}
+	
+}

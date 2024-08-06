@@ -1,0 +1,24 @@
+package lambda;
+
+
+public class Test1 {
+
+	public static void main(String [] args ) {
+		
+		Arit1 Addition = (a, b)->a+b ;
+		
+		Arit1 Substraction =(a,b)->a-b;
+		
+		Arit1 Multiplication = (a,b)->a*b;
+		
+		Arit1 Division =(a,b)->a/b;
+		
+		System.out.println("Addition of 5 and 10 is "+Addition.operate(5,10));
+		System.out.println("Substraction of 5 from 10 is "+Substraction.operate(10,5));
+		System.out.println("Multiplication of 5 and 10 is "+ Multiplication.operate(5, 10));
+		System.out.println("Substraction of 10 from 5 is "+ Division.operate(10, 5));
+		
+		
+	}
+	
+}

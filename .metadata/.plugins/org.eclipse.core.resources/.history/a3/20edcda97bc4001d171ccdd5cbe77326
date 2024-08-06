@@ -1,0 +1,28 @@
+package flow ;
+
+import java.util.*;
+import java.io.*;
+
+
+public class test{
+	
+		public static void main (String[] args) {
+			
+			List<String> l= new ArrayList<String>() ;
+			
+			l.add("Shashwat");
+			l.add(null);
+			l.add("Anand");
+			
+			int d=l.size();
+			
+			for(int i=0; i<d;i++) {
+			
+				System.out.println(l.get(i));
+							
+			}
+			
+			l.
+			
+		}
+}

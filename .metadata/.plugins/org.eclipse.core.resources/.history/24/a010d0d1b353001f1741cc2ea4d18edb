@@ -1,0 +1,18 @@
+package in.sp.resources;
+
+import org.springframework.context.annotation.*;
+
+@Configuration
+public class ConfigFile {
+
+	
+	@Bean
+	public Forces para() {
+		
+		Forces forc = new Forces();
+		
+	}
+   
+	
+	
+}

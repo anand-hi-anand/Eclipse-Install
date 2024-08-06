@@ -1,0 +1,15 @@
+package Lists;
+
+import java.util.*;
+
+public class LinkList{
+	
+	public static void main(String [] args) {
+		
+		List arr = new ArrayList<>(10);
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,72 @@
+package flow;
+import java.util.*;
+import java.util.Arrays;
+
+
+// accept an array of String objects and sort in alphabetical order
+
+//enum test {
+//	
+//	APPLE(1000), SAMSUNG, HTC;
+//	
+//	int price=80;
+//	
+//	test() {
+//		
+//		
+//		price = 200;
+//		System.out.println("It's a default constructor\n");
+//	}
+//	
+//	test(int p) {
+//		
+//		price = p;
+//		System.out.println("This is a parametrized constructor\n");
+//	}
+//	
+//	int getPrice() {
+//		
+//		System.out.println(this.price);
+//		return price;
+//	}
+//	
+//	public static void main (String [] args) {
+//		
+//		APPLE.getPrice();
+//		SAMSUNG.getPrice();
+//		HTC.getPrice();
+//	}
+//}
+//        	
+
+class test {
+	
+	public static void main (String [] args) {
+		
+		ArrayList<Integer> p = new ArrayList<>();
+		
+		p.add(9);
+		p.add(10);
+		p.add(878);
+		p.add(567);
+		p.add(1);
+		
+		Collections.sort(p);
+		
+		ListIterator l = p.listIterator();
+		
+		while (l.hasNext()) {
+			
+			System.out.print(l.next()+ " ");
+		}
+		
+		System.out.println();
+		System.out.println("Iteration Finished \n");
+		
+		
+		
+		
+	}
+	
+	
+}

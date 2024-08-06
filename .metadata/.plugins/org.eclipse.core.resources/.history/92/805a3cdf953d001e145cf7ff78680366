@@ -1,0 +1,29 @@
+package object;
+
+public class Class1 {
+
+	static int x=10;
+	
+	static String p="Shashwat" ;
+	
+	static int y=5;
+	
+	public int sum() {
+		System.out.println(p);
+		return x+y;
+	}
+	
+	public static void main(String [] args) {
+		
+		p="Anand";
+		x=500;
+		y=1000;
+		System.out.println(p);
+		System.out.println(x);
+		System.out.println(y);
+		Class1 c= new Class1();
+		int d= c.sum();
+		System.out.println(d);
+	}
+	
+}

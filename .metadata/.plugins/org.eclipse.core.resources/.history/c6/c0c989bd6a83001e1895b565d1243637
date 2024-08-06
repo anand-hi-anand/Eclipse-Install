@@ -1,0 +1,16 @@
+package interface1;
+
+import java.util.function.*;
+
+public class BuiltInFuncInterf{
+	
+	
+	public static void main (String...args) {
+		
+		Function<String, Integer> fun = a->a=="Special Forces"? 9:10;
+		
+		System.out.println(fun.apply("Special Forces"));
+		
+	}
+	
+}

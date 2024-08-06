@@ -1,0 +1,21 @@
+package interface1;
+
+import java.util.function.*;
+
+public class BuiltInFuncInterf {
+
+	public static void main(String[] args) {
+		
+		Consumer<Integer> con = a-> System.out.println(a);
+		Supplier<Double> sup = ()-> Math.PI;
+		Predicate<Integer> pred = a-> a>50?true:false;
+		
+		int d=60;
+		int e=90;
+		
+		con.accept(d);
+		sup.get();
+		pred.test(e);
+	}
+	
+}

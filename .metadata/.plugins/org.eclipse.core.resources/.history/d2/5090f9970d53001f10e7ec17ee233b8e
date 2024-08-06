@@ -1,0 +1,28 @@
+package Lists;
+
+import java.util.*;
+
+public class Arrays{
+	
+	
+	public static void main (String...args)
+	{
+		List <String> array = new ArrayList<>();
+		
+		array.add("String added");
+		array.add(null);
+		array.add("Some stuffs");
+		array.add("Last stuff");
+		
+	
+		
+		Scanner sc = new Scanner(System.in);
+		array.add(sc.nextLine());
+		
+		for (int i=0; i<array.size() ;i++) {
+			System.out.println(array.get(i));
+		}
+		
+		
+	}	
+}

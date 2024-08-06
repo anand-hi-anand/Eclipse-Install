@@ -1,0 +1,15 @@
+package object;
+
+public class Class1 {
+
+	int x=10;
+	String p="Shashwat" ;
+	
+	int y=5;
+	
+	public int sum() {
+		System.out.println(p);
+		return x+y;
+	}
+	
+}

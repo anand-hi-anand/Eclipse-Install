@@ -1,0 +1,17 @@
+package object;
+
+public class Class2 {
+
+	public static void main(String args[]) {
+		Class1 c = new Class1();
+		
+		c.x=50;
+		c.y=90;
+		c.p="Hello";
+		
+		int p= c.sum();
+		
+		System.out.println(p);
+	}
+	
+}

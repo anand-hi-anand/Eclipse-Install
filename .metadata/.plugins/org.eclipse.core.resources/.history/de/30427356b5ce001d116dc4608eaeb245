@@ -1,0 +1,34 @@
+package flow ;
+
+import java.util.*;
+import java.io.*;
+
+
+public class test{
+	
+	public static <T> void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    
+    Scanner sc = new Scanner(System.in);  
+    
+    List<T> l = new ArrayList<>();
+    
+    
+    
+    while(sc.hasNext()){
+        
+        l.add(sc.hasNext());
+    }
+    
+    printArray(l);
+    
+   }    
+   
+   public static <T> void printArray(T[] data){
+       
+       int d = data.length;
+       for (int i=0; i<d; i++){
+           System.out.println(data[i]);
+       }
+   }
+}
